@@ -1,0 +1,77 @@
+body ,html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgba(82, 98, 112, 0.7);
+  }
+.nav-item{
+    font-size: 20px;
+    margin: 2px;
+}
+.jumbotron{
+    background-color: rgb(241, 241, 241);
+    padding-top: 4%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer{
+    background-color: rgb(216, 229, 236, 0.96);
+    padding-top: 20px;
+  }
+.svg{
+    background: url(img/undraw_business_deal_cpi9.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+.two{
+    background: url(img/young-business-people-discussing-planning-about-results-office-corridor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30rem;
+
+}
+.quest{
+    background: url(img/undraw_Questions_re_1fy7.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(220, 169, 233, 0.96);
+    height: 30em;
+}
+@media(max-width:767.5px){
+    .jumbotron{
+        height: 40%;
+    }
+    nav{
+        background: rgb(32, 62, 87);
+    }
+    .mob{
+        padding-top: 10px;
+        background-color: rgb(238, 237, 237,0.4);
+    }
+    .svg{
+        background: none;
+    }
+    .col{
+        height: auto;
+    }
+    .quest{
+        height: 0px;
+        visibility: hidden;
+    }
+    .two{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 20rem;
+    
+    }
+
+}
