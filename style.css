@@ -1,9 +1,9 @@
 body ,html{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 nav{
     background: rgba(82, 98, 112, 0.7);
   }
@@ -12,10 +12,15 @@ nav{
     margin: 2px;
 }
 .jumbotron{
+    width: 100%;
     background-color: rgb(241, 241, 241);
     padding-top: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+ul{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 footer{
