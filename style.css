@@ -5,7 +5,8 @@ body ,html{
 }
 
 nav{
-    background: rgba(82, 98, 112, 0.7);
+    background:rgb(31, 26, 26,0.8);
+    transition: 2s;
   }
 .nav-item{
     font-size: 20px;
@@ -13,7 +14,7 @@ nav{
 }
 .jumbotron{
     width: 100%;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(209, 208, 231);
     padding-top: 5%;
     margin-top: 0px;
     margin-bottom: 0px;

@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=Hi, initial-scale=1.0">
     <title>Kishore Qkres Consult</title>
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">       
-     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body >
@@ -44,26 +49,60 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron" id="jumbotron" style="height: 60%;">
+    <div class="jumbotron" id="jumbotron" style="height: 60%;" >
         <div class="conatiner-fluid" style="height: 100%;">
-            <div class="row" style="height: 100%; width: 100%;">
-                <div class=" col-12 col-md-5 flex-center text-center" data-aos="zoom-in" data-aos-duration="3000" style="height: 100%;">
+            <div class="row" style="height: 100%; width: 100%; overflow-x: hidden;">
+                <div class=" col-12 col-md-5 flex-center text-center" style="height: 100%;">
                     <h1>
                         <strong> Consultancy Services</strong> 
                     </h1>
                 </div>
-                <div class="col-12 col-md-7 svg">
+                <div class="col-12 col-md-7 svg"  data-aos="fade-left" data-aos-duration="3000">
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="overflow-x: hidden;">
+
+    <div class="modal" id="upload" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    Upload files from device
+                </div>
+                <form action="" method="post">
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-3 col-form-label">First name</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" name="name" id ="firstname" placeholder="First name">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <input type="file" placeholder="Choose File">
+                        </div>
+                        
+                    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-secondary">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <div class="container-fluid" style="overflow: hidden;">
         <div class="row">
-            <div class="col-12 col-md-6 two" data-aos="fade-up-right" style="overflow-x: hidden;" data-aos-duration="3000">
+            <div class="col-12 col-md-6 two" data-aos="flip-left" style="overflow-x: hidden;" data-aos-duration="3000" data-aos-once="true">
 
             </div>
-            <div class="col-12 col-md-6 flex-center" style="padding: 10px; margin: auto;" data-aos="fade-up-left" data-aos-duration="3000">
+            <div class="col-12 col-md-6 flex-center" style="padding: 10px; margin: auto;" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-once="true">
                 <ul style="list-style: none;">
                     <li>
                         Many Innovative Ideas struck at some point as they don't know how to proceed further. They
@@ -82,13 +121,13 @@
                 </ul>
             </div>
         
-            <div class="col-12 col-md-6 flex-center mob" style="margin: auto;">
+            <div class="col-12 col-md-6 flex-center mob" style="margin: auto;" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-once="true">
                 <ul style="list-style: none;">
                     <h4 style="padding-bottom: 10px;"><i>Steps to follow</i>  </h4>
                     <li>
                         <strong>Phase 1: Submit your problem statement<br></strong>
                         Write your query in detail and supported documents preferably in .pdf format. <br>
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#upload">
                             Upload
                         </button>
                     </li>
@@ -102,13 +141,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-6 quest" style="overflow-x: hidden;" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
+            <div class="col-12 col-md-6 quest" style="overflow-x: hidden;" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">
 
             </div>
         </div>
     </div>
     <footer id="footer">
-        <div class="container" data-aos="zoom-in" data-aos-once="true">
+        <div class="container" data-aos="zoom-in">
           <div class="row">
               <div class="col-5 col-sm-4 align-self-center">
                   <ul class="list-unstyled ml-2">
@@ -141,15 +180,18 @@
                 </div>
                 </div>
             </footer>
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+            <script>
+                AOS.init();                   
+            </script>
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.esm.min.js" integrity="sha384-Eg5XYZrb+x0FMnsSAcaUNc6vJ/6B47jQvyhan3IGKcCfko9Hq6vS3s1PviSpNbdE" crossorigin="anonymous"></script>
-                <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-                <script>
-                    AOS.init();                   
-                </script>
-
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+            <script src="scripts.js"></script>
 </body>
 
 </html>
