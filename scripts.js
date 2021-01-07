@@ -9,9 +9,9 @@ bigimg.onload = function(){
 };
 
 setTimeout(function(){
-    bigimg.src = "img/young-business-people-discussing-planning-about-results-office-corridor.jpg" ;
+    bigimg.src = "img/50.jpg" ;
 
-},3000)
+},100)
 
 function scrollnav(){
     if ( document.documentElement.scrollTop > 300 ){
