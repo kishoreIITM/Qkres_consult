@@ -2,6 +2,17 @@ window.onscroll = function() {
     scrollnav()
 };
 
+var two = document.getElementsByClassName("two");
+var bigimg = document.createElement("img");
+bigimg.onload = function(){
+    two[0].style.backgroundImage =  'url("'+bigimg.src+'")';
+};
+
+setTimeout(function(){
+    bigimg.src = "img/young-business-people-discussing-planning-about-results-office-corridor.jpg" ;
+
+},3000)
+
 function scrollnav(){
     if ( document.documentElement.scrollTop > 300 ){
         document.getElementById("nav").style.padding =" 0 1rem";

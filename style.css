@@ -28,15 +28,9 @@ footer{
     background-color: rgb(216, 229, 236, 0.96);
     padding-top: 20px;
   }
-.svg{
-    background: url(img/undraw_business_deal_cpi9.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-}
+
 .two{
-    background: url(img/young-business-people-discussing-planning-about-results-office-corridor.jpg);
+    background: url(img/young-business.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -63,14 +57,14 @@ footer{
         background-color: rgb(238, 237, 237,0.4);
     }
     .svg{
-        background: none;
+        display: none;
     }
     .col{
         height: auto;
     }
     .quest{
         height: 0px;
-        visibility: hidden;
+        display: none;
     }
     .two{
         background-repeat: no-repeat;
@@ -79,5 +73,14 @@ footer{
         height: 20rem;
     
     }
-
+    
+}
+@media(min-width:767.6px){
+    .svg{
+        background: url(img/undraw_business_deal_cpi9.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
 }
