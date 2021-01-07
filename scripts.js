@@ -11,7 +11,7 @@ bigimg.onload = function(){
 setTimeout(function(){
     bigimg.src = "img/50.jpg" ;
 
-},100)
+},1000)
 
 function scrollnav(){
     if ( document.documentElement.scrollTop > 300 ){
