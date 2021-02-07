@@ -13,6 +13,7 @@ setTimeout(function(){
 
 },1000)
 
+
 function scrollnav(){
     if ( document.documentElement.scrollTop > 300 ){
         document.getElementById("nav").style.padding =" 0 1rem";
